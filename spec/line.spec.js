@@ -14,7 +14,7 @@ describe('line', function() {
 
   it('says the line is empty if no one is in line', function() {
     spyOn(console, 'log');
-    line(katzDeli, console);
+    line(katzDeli);
     expect(console.log).toHaveBeenCalledWith("The line is currently empty.");
   });
 
