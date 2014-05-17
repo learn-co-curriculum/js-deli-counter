@@ -20,7 +20,7 @@ describe('line', function() {
 
   it('says who is on line when there are people waiting', function(){
     spyOn(console, 'log');
-    line(katzDeli);
+    line(otherDeli);
     expect(console.log).toHaveBeenCalledWith("The line is currently: 1. Steven, 2. Blake, 3. Avi");
   });
 });
