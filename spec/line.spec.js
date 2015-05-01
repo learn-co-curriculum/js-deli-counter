@@ -2,12 +2,10 @@
 
 describe('line', function() {
 
-  var line;
   var katzDeli;
   var otherDeli;
 
   beforeEach(function() {
-    line = require('../lib/line');
     katzDeli = [];
     otherDeli = ["Steven", "Blake", "Avi"];
   });

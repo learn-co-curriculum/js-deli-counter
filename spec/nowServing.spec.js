@@ -2,12 +2,10 @@
 
 describe('nowServing', function() {
 
-  var nowServing;
   var katzDeli;
   var otherDeli;
 
   beforeEach(function() {
-    nowServing = require('../lib/nowServing');
     katzDeli = [];
     otherDeli = ["Steven", "Blake", "Avi"];
   });

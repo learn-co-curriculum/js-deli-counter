@@ -2,14 +2,12 @@
 
 describe('takeANumber', function() {
 
-  var takeANumber;
   var katzDeli;
   var otherDeli;
 
   beforeEach(function() {
     katzDeli = [];
     otherDeli = ["Steven", "Blake", "Avi"];
-    takeANumber = require('../lib/takeANumber');
   });
 
   it('adds a person to the line', function() {

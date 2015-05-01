@@ -1,0 +1,10 @@
+# A list of javascript files required for the project, in dependency order
+javascripts:
+  files:
+    - lib/line.js
+    - lib/nowServing.js
+    - lib/takeANumber.js
+  specs:
+    - spec/line.spec.js
+    - spec/nowServing.spec.js
+    - spec/takeANumber.spec.js
