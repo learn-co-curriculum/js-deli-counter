@@ -1,8 +1,3 @@
----
-languages: javascript
-tags: functions, arrays, iteration
----
-
 # Deli Counter - Take a Number
 
 ### Skills: Functions, Arrays
