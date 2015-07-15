@@ -17,6 +17,9 @@ eg.
 
 3. Build a function `line` that shows people their current place in line. If there is nobody in line, it should say "The line is currently empty."
 
+### Hint
+The functions should "say" something by first using `console.log()` and then `return` that same string so that the `index.html` shows the results.
+
 Example usage:
 
   ```javascript
