@@ -51,16 +51,12 @@ describe('takeANumber', function() {
   });
 
   it('adds a person to the line', function() {
-    // spyOn(console, 'log');
     expect(takeANumber(katzDeli, 'Ada')).toEqual("Welcome, Ada. You are number 1 in line.");
-    // expect(console.log).toHaveBeenCalledWith("Welcome, Ada. You are number 1 in line.");
     expect(katzDeli).toEqual(['Ada']);
   });
 
   it('appends the person the end of the line if there are already people on it', function(){
-    // spyOn(console, 'log');
     expect(takeANumber(otherDeli, 'Grace')).toEqual("Welcome, Grace. You are number 4 in line.");
-    // expect(console.log).toHaveBeenCalledWith("Welcome, Grace. You are number 4 in line.");
     expect(otherDeli).toEqual(["Steven", "Blake", "Avi", "Grace"]);
   });
 
