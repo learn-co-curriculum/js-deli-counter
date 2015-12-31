@@ -15,10 +15,9 @@ eg.
 
 2. Build a function `nowServing`. This function should call out (via `console.log`) the next person in line and then remove them from the line. If there is nobody in line, it should say that "There is nobody waiting to be served!"
 
-3. Build a function `line` that shows people their current place in line. If there is nobody in line, it should say "The line is currently empty."
+3. Build a function `line` that returns people their current place in line. If there is nobody in line, it should return "The line is currently empty."
 
 ### Hint
-The functions should "say" something by first using `console.log()` and then `return` that same string so that the `index.html` shows the results.
 
 Example usage:
 
