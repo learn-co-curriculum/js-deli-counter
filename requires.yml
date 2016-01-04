@@ -3,4 +3,4 @@ javascripts:
   files:
     - lib/deli.js
   specs:
-    - spec/deli.js
+    - spec/deli_spec.js
