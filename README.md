@@ -44,4 +44,4 @@ Example usage:
   line(katzDeli); // "The line is currently: 1. Kent 2. Matz"
   ```
 
-<a href='https://learn.co/lessons/js-deli-counter' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-deli-counter' title='Deli Counter - Take a Number'>Deli Counter - Take a Number</a> on Learn.co and start learning to code for free.</p>
