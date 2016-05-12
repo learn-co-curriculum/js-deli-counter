@@ -6,22 +6,26 @@ const jsdom = require('mocha-jsdom')
 const path = require('path')
 
 describe('deli', () => {
+  jsdom({
+    src: fs.readFileSync(path.resolve(__dirname, '..', 'deli.js'), 'utf-8')
+  })
+
   describe('currentLine(line)', () => {
-    it('says the line is empty if no one is in line', () => {
+    it('returns "The line is currently empty." if no one is in line', () => {
       expect(currentLine([])).to.equal("The line is currently empty.");
     });
 
-    it('says who is on line when there are people waiting', () => {
+    it('says who is in line when there are people waiting', () => {
       expect(currentLine(["Bill", "Jane", "Ann"])).to.eql("The line is currently: 1. Bill, 2. Jane, 3. Ann");
     });
   });
 
   describe('nowServing', () => {
-    it('says the line is empty when no on is on line', () => {
+    it('returns the line is empty when no on is on line', () => {
       expect(nowServing([])).to.equal("There is nobody waiting to be served!");
     });
 
-    it('Announces the person it is serving, and shifts the line', () => {
+    it('returns an announcement about the person it is serving, and shifts the line', () => {
       const deliLine = ["Steven", "Blake", "Avi"]
       expect(nowServing(deliLine)).to.equal("Currently serving Steven.");
       expect(deliLine).to.eql(["Blake", "Avi"]);
