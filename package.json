@@ -1,0 +1,36 @@
+{
+  "name": "js-deli-counter",
+  "version": "0.1.0",
+  "description": "Practice with loops, arrays, and functions in JavaScript on Learn",
+  "main": "deli.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/learn-co-curriculum/js-deli-counter.git"
+  },
+  "keywords": [
+    "javascript",
+    "array",
+    "loop",
+    "flatiron",
+    "learn"
+  ],
+  "author": "@vicfriedman",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/learn-co-curriculum/js-deli-counter/issues"
+  },
+  "homepage": "https://github.com/learn-co-curriculum/js-deli-counter#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jsdom": "^9.0.0",
+    "mocha": "^2.4.5",
+    "mocha-jsdom": "^1.1.0",
+    "mocha-multi": "^0.9.0"
+  }
+}
