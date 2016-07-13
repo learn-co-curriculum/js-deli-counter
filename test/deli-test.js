@@ -10,28 +10,6 @@ describe('deli', () => {
     src: fs.readFileSync(path.resolve(__dirname, '..', 'deli.js'), 'utf-8')
   })
 
-  describe('currentLine(line)', () => {
-    it('returns "The line is currently empty." if no one is in line', () => {
-      expect(currentLine([])).to.equal("The line is currently empty.");
-    });
-
-    it('says who is in line when there are people waiting', () => {
-      expect(currentLine(["Bill", "Jane", "Ann"])).to.eql("The line is currently: 1. Bill, 2. Jane, 3. Ann");
-    });
-  });
-
-  describe('nowServing', () => {
-    it('returns the line is empty when no on is on line', () => {
-      expect(nowServing([])).to.equal("There is nobody waiting to be served!");
-    });
-
-    it('returns an announcement about the person it is serving, and shifts the line', () => {
-      const deliLine = ["Steven", "Blake", "Avi"]
-      expect(nowServing(deliLine)).to.equal("Currently serving Steven.");
-      expect(deliLine).to.eql(["Blake", "Avi"]);
-    });
-  });
-
   describe('takeANumber', () => {
     var katzDeli;
     var otherDeli;
@@ -57,6 +35,28 @@ describe('deli', () => {
       takeANumber(katzDeli, 'Kent');
 
       expect(katzDeli).to.eql(["Ada", "Grace", "Kent"]);
+    });
+  });
+
+  describe('nowServing', () => {
+    it('returns the line is empty when no on is on line', () => {
+      expect(nowServing([])).to.equal("There is nobody waiting to be served!");
+    });
+
+    it('returns an announcement about the person it is serving, and shifts the line', () => {
+      const deliLine = ["Steven", "Blake", "Avi"]
+      expect(nowServing(deliLine)).to.equal("Currently serving Steven.");
+      expect(deliLine).to.eql(["Blake", "Avi"]);
+    });
+  });
+
+  describe('currentLine(line)', () => {
+    it('returns "The line is currently empty." if no one is in line', () => {
+      expect(currentLine([])).to.equal("The line is currently empty.");
+    });
+
+    it('says who is in line when there are people waiting', () => {
+      expect(currentLine(["Bill", "Jane", "Ann"])).to.eql("The line is currently: 1. Bill, 2. Jane, 3. Ann");
     });
   });
 })
