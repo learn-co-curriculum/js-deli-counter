@@ -1,10 +1,10 @@
 # Deli Counter - Take a Number
 
 ## Objectives
-+ Add elements to an array
-+ Return items from an array
-+ Iterate through an array
-+ Pass an array as a function parameter
+1. Add elements to an array
+2. Return items from an array
+3. Iterate through an array
+4. Pass an array as a function parameter
 
 ## Instructions
 
