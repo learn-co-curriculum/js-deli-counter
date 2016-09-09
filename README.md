@@ -27,23 +27,25 @@ Example usage:
 ```javascript
 var katzDeliLine = [];
 
-takeANumber(katzDeliLine, "Ada"); // 1
-takeANumber(katzDeliLine, "Grace"); // 2
-takeANumber(katzDeliLine, "Kent"); // 3
+takeANumber(katzDeliLine, "Ada"); // "Welcome, Ada. You are number 1 in line."
+takeANumber(katzDeliLine, "Grace"); // "Welcome, Grace. You are number 2 in line."
+takeANumber(katzDeliLine, "Kent"); // "Welcome, Kent. You are number 3 in line."
 
-currentLine(katzDeliLine); // "The line is currently: 1. Ada 2. Grace 3. Kent"
+currentLine(katzDeliLine); // "The line is currently: 1. Ada, 2. Grace, 3. Kent"
 
 nowServing(katzDeliLine); // "Currently serving Ada."
 
-currentLine(katzDeliLine); // "The line is currently: 1. Grace 2. Kent"
+currentLine(katzDeliLine); // "The line is currently: 1. Grace, 2. Kent"
 
 takeANumber(katzDeliLine, "Matz"); // "3"
 
-currentLine(katzDeliLine); // "The line is currently: 1. Grace 2. Kent 3. Matz"
+currentLine(katzDeliLine); // "The line is currently: 1. Grace, 2. Kent, 3. Matz"
 
 nowServing(katzDeliLine); // "Currently serving Grace."
 
-currentLine(katzDeliLine); // "The line is currently: 1. Kent 2. Matz"
+currentLine(katzDeliLine); // "The line is currently: 1. Kent, 2. Matz"
 ```
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-deli-counter' title='Deli Counter - Take a Number'>Deli Counter - Take a Number</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/js-deli-counter'>Deli Counter</a> on Learn.co and start learning to code for free.</p>
