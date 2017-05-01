@@ -18,7 +18,7 @@ At the beginning of the day, the deli is empty and is represented by an empty ar
 
 2. Build a function `nowServing`. This function should return the first person in line and then remove that individual from the line. If there is nobody in line, it should return "There is nobody waiting to be served!"
 
-3. Build a function `currentLine` that returns the current line. For example, if `katzDeliLine` is currently `["Ada", "Grace"]`, `currentLine(katzDeliLine)` would return `"The line is currently: 1. Ada 2. Grace"`.  If there is nobody in line, it should return `"The line is currently empty."`
+3. Build a function `currentLine` that returns the current line. For example, if `katzDeliLine` is currently `["Ada", "Grace"]`, `currentLine(katzDeliLine)` would return `"The line is currently: 1. Ada, 2. Grace"`.  If there is nobody in line, it should return `"The line is currently empty."`
 
 ### Hint
 
@@ -47,3 +47,5 @@ currentLine(katzDeliLine); // "The line is currently: 1. Kent, 2. Matz"
 ```
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-deli-counter' title='Deli Counter Lab'>Deli Counter Lab</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/js-deli-counter'>Deli Counter</a> on Learn.co and start learning to code for free.</p>
