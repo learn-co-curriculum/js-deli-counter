@@ -59,7 +59,7 @@ describe('deli', () => {
         ["Steve", "Susan", "Mike"]
       ]
 
-      let newLine = customerArrays[Math.floor(Math.random()*((4-1)+1))]
+      let newLine = customerArrays[Math.floor(Math.random()*4)]
       let expectedOutput = `The line is currently: 1. ${newLine[0]}, 2. ${newLine[1]}, 3. ${newLine[2]}`
       
       expect(currentLine(newLine)).toEqual(expectedOutput);
