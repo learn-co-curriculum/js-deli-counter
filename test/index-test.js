@@ -52,17 +52,17 @@ describe('deli', () => {
     });
  
     it('returns a different response programmatically given a different array of names', () => {
-      let customer_arrays = [
+      let customerArrays = [
         ["Nicky", "Jared", "Katie"],
         ["Ian", "Alex", "Matthew"],
         ["Duke", "Brianna", "Sarah"],
         ["Steve", "Susan", "Mike"]
       ]
 
-      let new_line = customer_arrays[Math.floor(Math.random()*((4-1)+1) + 1)]
-      let expected_output = `The line is currently: 1. ${new_line[0]}, 2. ${new_line[1]}, 3. ${new_line[2]}`
+      let newLine = customer_arrays[Math.floor(Math.random()*((4-1)+1))]
+      let expectedOutput = `The line is currently: 1. ${newLine[0]}, 2. ${newLine[1]}, 3. ${newLine[2]}`
       
-      expect(currentLine(new_line)).toEqual(expected_output);
+      expect(currentLine(newLine)).toEqual(expectedOutput);
     });
 
   });
